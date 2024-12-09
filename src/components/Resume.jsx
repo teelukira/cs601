@@ -13,6 +13,17 @@ function Resume() {
         <Contact />
         <TopSkills />
         <Certifications />
+
+        {/* Resume Download Button */}
+        <div className="download-resume">
+          <a 
+            href="/resume_ghryou_241209.pdf" /* Replace with the actual path to your resume PDF */
+            download="Resume.pdf" /* Suggested file name for download */
+            className="download-button"
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
 
       {/* Main Content */}
