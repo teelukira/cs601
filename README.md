@@ -28,6 +28,7 @@ Host your web app with netlify. Read and deploy repositories published on Github
 ## How to run
 By default, the web app is hosted through netlify. 
 You can access it through the link below.
+[project site](https://ghryou-cs601-term-proj.netlify.app/)
 
 ### If the link doesn't work, you can manually run the code to access it.
 The project needs to be run through React. 
