@@ -5,6 +5,9 @@ function Gallery() {
     '/images/redhat.jpg',
     '/images/freshman.jpg',
     '/images/snowman.jpg',
+    '/images/glacierman.jpg',
+    '/images/lakeman.jpg',
+    '/images/pizzaman.jpg',
   ];
 
   return (

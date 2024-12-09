@@ -8,6 +8,7 @@ import Resume from './components/Resume';
 import Gallery from './components/Gallery';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (

@@ -1,12 +1,26 @@
 import React from 'react';
+import Contact from './Contact';
+import TopSkills from './TopSkills';
+import Certifications from './Certifications';
+import Experience from './Experience';
+import Education from './Education';
 
 function Resume() {
   return (
-    <section id="resume" style={{ padding: '50px' }}>
-      <h2>My Resume</h2>
-      <p>You can download my resume here:</p>
-      <a href="/resume_ghryou_241209.pdf" download>Download Resume</a>
-    </section>
+    <div className="resume-container">
+      {/* Sidebar */}
+      <div className="sidebar">
+        <Contact />
+        <TopSkills />
+        <Certifications />
+      </div>
+
+      {/* Main Content */}
+      <div className="main-content">
+        <Experience />
+        <Education />
+      </div>
+    </div>
   );
 }
 

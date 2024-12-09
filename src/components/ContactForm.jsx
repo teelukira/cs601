@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContactForm.css'; // 외부 CSS 파일 가져오기
 
 function ContactForm() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -15,22 +16,42 @@ function ContactForm() {
   };
 
   return (
-    <section id="contact" style={{ padding: '50px' }}>
+    <section id="contact" className="form-container">
       <h2>Contact Me</h2>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name:</label><br />
-          <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
         </div>
-        <div>
-          <label>Email:</label><br />
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
         </div>
-        <div>
-          <label>Message:</label><br />
-          <textarea name="message" value={formData.message} onChange={handleChange} required></textarea>
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
     </section>
   );

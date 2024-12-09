@@ -1,38 +1,4 @@
 /* General Styles */
-/* 전체 페이지를 뷰포트 높이에 맞추기 위한 설정 */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* 뷰포트의 전체 높이를 차지 */
-}
-
-/* 메인 콘텐츠 영역 */
-main {
-  flex: 1; /* 남은 공간을 차지 */
-}
-
-/* Footer 스타일 */
-footer {
-  background-color: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 20px;
-}
-
-footer a {
-  color: #00aced; /* 링크 색상 */
-  margin: 0 10px;
-}
-
-footer a:hover {
-  text-decoration: underline; /* 호버 효과 */
-}
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -41,131 +7,86 @@ body {
   color: #333;
 }
 
-nav {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+p, li {
+  line-height: 1.6;
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 50px;
-  text-align: center;
-}
-
-h1, h2 {
-  color: #444;
-}
-
-/* Home Section */
-#home {
-  background-color: #e8f0fe;
-  padding: 100px 20px;
-}
-
-/* About Section */
-#about {
+/* Resume Container */
+.resume-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Sidebar takes less space */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
   background-color: #fff;
-  padding: 50px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Interests Section */
-#interests ul {
-  list-style: none;
-  padding: 0;
-}
-
-#interests ul li {
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-/* Resume Section */
-#resume a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#resume a:hover {
-  text-decoration: underline;
-}
-
-/* Gallery Section */
-#gallery {
+/* Sidebar Styles */
+.sidebar {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 20px;
 }
 
-#gallery img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
+.sidebar .section {
+  background-color: #f9f9f9;
+  padding: 15px;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Form Section */
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: left;
+.contact-info div {
+  margin-bottom: 10px;
 }
 
-form div {
-  margin-bottom: 15px;
-}
-
-form label {
-  display: block;
+.contact-info span {
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+.top-skills {
+  display: flex;
+  flex-wrap: wrap; /* Wrap skills into multiple lines */
 }
 
-form button {
+.top-skills .skill {
   background-color: #007bff;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
+  padding: 5px;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+  margin-right: 10px;
 }
 
-form button:hover {
-  background-color: #0056b3; 
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
+
+.main-content .section {
+  margin-bottom: 20px;
+}
+
+.main-content ul {
+  list-style-type: none; /* Remove default list styling */
+}
+
+.main-content ul li {
+  margin-bottom: 15px; /* Add spacing between list items */
+}
+
+/* Section Titles */
+.section h2 {
+  font-size: larger;
+}
+
+/* Utility Classes */
+.text-bold {
+  font-weight: bold; /* Helper class for bold text */
+}
+

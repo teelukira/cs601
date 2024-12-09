@@ -10,6 +10,15 @@
 - React: Dynamically generate web with front-end frameworks
 
 
+## Main Features
+### Flex
+Flex를 통한 동적인 레이아웃을 사용하여 Resume 페이지와 Gallery를 작성하였습니다.
+사이드바에는 연락처와 스킬, 자격을 작성하고, 메인컨텐츠에는 업무 경력과 교육내역을 보이도록 레이아웃을 구성하였습니다.
+
+
+### Router 
+React Router를 사용하여 Multi-page Application을 구현하였습니다. 
+Home, About, Interests 등의 페이지를 헤더자리에 위치한 nav를 통해 이동할 수 있게하였습니다.
 
 
 
