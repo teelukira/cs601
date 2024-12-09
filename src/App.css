@@ -1,19 +1,23 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background: linear-gradient(135deg, #f4f4f9, #e0eafc); /* Subtle gradient background */
   color: #333;
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: #007bff; /* Primary blue color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
 }
 
 p, li {
-  line-height: 1.6;
+  line-height: 1.8;
+  color: #555;
 }
 
 /* Resume Container */
@@ -21,11 +25,12 @@ p, li {
   display: grid;
   grid-template-columns: 1fr 2fr; /* Sidebar takes less space */
   gap: 20px;
-  padding: 20px;
+  padding: 30px;
   max-width: 1200px;
   margin: auto;
-  background-color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
 }
 
 /* Sidebar Styles */
@@ -36,57 +41,14 @@ p, li {
 }
 
 .sidebar .section {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7); /* Light gradient for better readability */
+  color: #333; /* Dark text for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px rgba(255,255,255,0.5), inset -3px -3px rgba(230,230);
 }
 
-.contact-info div {
-  margin-bottom: 10px;
+.sidebar:hover {
+  transform: scale(1.05); /* Slightly enlarge the sidebar on hover */
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
 }
-
-.contact-info span {
-  font-weight: bold;
-}
-
-.top-skills {
-  display: flex;
-  flex-wrap: wrap; /* Wrap skills into multiple lines */
-}
-
-.top-skills .skill {
-  background-color: #007bff;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-/* Main Content Styles */
-.main-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content .section {
-  margin-bottom: 20px;
-}
-
-.main-content ul {
-  list-style-type: none; /* Remove default list styling */
-}
-
-.main-content ul li {
-  margin-bottom: 15px; /* Add spacing between list items */
-}
-
-/* Section Titles */
-.section h2 {
-  font-size: larger;
-}
-
-/* Utility Classes */
-.text-bold {
-  font-weight: bold; /* Helper class for bold text */
-}
-
