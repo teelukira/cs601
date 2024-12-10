@@ -4,11 +4,14 @@
 This project is a web application created for the Term Project in CS601.
 It is written as a personal introduction, like the author's biography and interests.
 
+[Presentation Video](https://youtu.be/77UIej865Sw)
+
 
 ## Technology stack
 - HTML: Organizes the skeleton of the web document
 - CSS: Used to modify html elements and dynamically change their layout
 - React: Dynamically generate web with front-end frameworks
+- Netlify: Web Hosting service
 
 ## Main Features
 ### Flex
@@ -25,9 +28,11 @@ Determine the navigator bar and layout through CSS. Style the html, including th
 ### Netlify
 Host your web app with netlify. Read and deploy repositories published on Github.
 
+
 ## How to run
 By default, the web app is hosted through netlify. 
 You can access it through the link below.
+
 [project site](https://ghryou-cs601-term-proj.netlify.app/)
 
 ### If the link doesn't work, you can manually run the code to access it.
